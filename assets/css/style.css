@@ -1,75 +1,119 @@
-body {
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background: #f8f8f8;
   color: #333;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 12px 24px;
-  border-bottom: 1px solid #ddd;
-}
-
-header .logo {
-  font-weight: bold;
-  color: red;
-  font-size: 1.4rem;
-}
-
-nav a {
-  margin-left: 16px;
+a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #d32f2f;
+  color: white;
+  padding: 16px 0;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.main-nav {
+  margin-top: 8px;
+}
+.main-nav a {
+  margin-right: 16px;
   font-weight: 500;
+  color: #fff;
 }
 
-nav a:hover {
-  color: red;
-}
-
-.banner {
-  margin: 24px auto;
-  text-align: center;
-}
-
+/* ===== Banner ===== */
 .banner img {
+  width: 100%;
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 24px auto;
 }
 
-.providers {
-  padding: 24px;
-  background-color: #fff;
-  margin: 24px;
-  border-radius: 12px;
+/* ===== Brand Section ===== */
+.brand-highlight {
+  background: #fff;
+  padding: 24px 0;
+  text-align: center;
+}
+.brand-list {
+  margin-top: 12px;
+}
+.brand-btn {
+  margin: 6px;
+  padding: 8px 16px;
+  border: 1px solid #d32f2f;
+  background: white;
+  color: #d32f2f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.brand-btn:hover {
+  background: #d32f2f;
+  color: white;
 }
 
-.providers h2 {
-  color: red;
-  margin-bottom: 16px;
+/* ===== Coupon List ===== */
+.coupon-list {
+  background: #fff;
+  padding: 32px 0;
 }
-
-.provider-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 16px;
-  justify-items: center;
+.coupon-list h2 {
+  text-align: center;
+  margin-bottom: 24px;
 }
-
-.provider-list img {
-  max-height: 60px;
-  object-fit: contain;
+.coupons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
-
-footer {
+.coupon-card {
+  background: #f0f0f0;
   padding: 16px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.coupon-card h3 {
+  color: #d32f2f;
+}
+.btn-copy {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-copy:hover {
+  background: #b71c1c;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #eee;
+  padding: 16px 0;
   text-align: center;
   font-size: 0.9rem;
-  color: #888;
+  color: #555;
 }
